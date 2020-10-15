@@ -16,4 +16,9 @@
 
 
 
-## 二、将项目代码上传至服务器
+## 搭建项目
+* 建立一个虚拟环境
+  - 建立myapp文件，并在文件下建env和project文件，分别放虚拟环境和程序代码
+  - 在env下创建虚拟环境 
+    <font color=red>virtualenv -p python3 py3env</font>
+    
