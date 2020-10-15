@@ -64,7 +64,7 @@
     make && make install   
 * nginx配置
   -在/myapp/project/conf文件夹下建立nginx.conf文件
-  >
+    
 user  root;
 worker_processes  1;
 
@@ -186,6 +186,7 @@ http {
     #}
 
 }
+
 
 
 
