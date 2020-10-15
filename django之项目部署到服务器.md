@@ -40,8 +40,7 @@
   - pip install uwsgi
 * uwsgi配置
   - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件
-  > 
-  [uwsgi]  
+  >   [uwsgi]  
   chdir = /myapp/project/work/
   module = work.wsgi  
   home = /myapp/env/py3env
@@ -53,6 +52,7 @@
   vacuum = true
   daemonize = /myapp/project/logs/uwsgi.log 
   logfile-chmod = 666 
+
 
 
   
