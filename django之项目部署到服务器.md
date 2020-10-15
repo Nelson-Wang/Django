@@ -22,5 +22,9 @@
   - 在env下创建虚拟环境      
     <font color="#DC143C">virtualenv -p python3 py3env</font>
   - 启动虚拟环境     
-    <font color="#DC143C">source py3env/bin/activate</font>
+    <font color="red">source py3env/bin/activate</font>
+* 迁移windows下的pip环境
+  - 获取pycharm中的pip环境，并存到env.txt中     
+    
+  
     
