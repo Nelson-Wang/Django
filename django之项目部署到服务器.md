@@ -14,8 +14,6 @@
   - sqlparse 0.3.1
   - uWSGI 2.0.19.1
 
-
-
 ## 搭建项目
 * 建立一个虚拟环境
   - 建立myapp文件，并在文件下建env和project文件，分别放虚拟环境和程序代码
@@ -28,4 +26,7 @@
     pip freeeze -> env.txt
   - 将env.txt传到linux中，并安装里面的环境     
     pip install -r env.txt
-    
+  
+  ## 项目代码上传
+  * 项目代码测试
+    - 将
