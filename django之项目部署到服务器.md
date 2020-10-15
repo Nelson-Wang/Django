@@ -26,7 +26,11 @@
     pip freeeze -> env.txt
   - 将env.txt传到linux中，并安装里面的环境     
     pip install -r env.txt
+    
+## 项目代码上传
+* 项目代码测试
+  - 将代码上传到/myapp/project/文件下，运行python manage.py runserver查看代码是否有错误
+* 部分代码修改（修改settings.py文件）
+  - DEBUG = False 
+  - ALLOWED_HOSTS = ['*', ]
   
-  ## 项目代码上传
-  * 项目代码测试
-    - 将
