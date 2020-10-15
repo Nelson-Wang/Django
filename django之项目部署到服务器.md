@@ -32,5 +32,6 @@
   - 将代码上传到/myapp/project/文件下，运行python manage.py runserver查看代码是否有错误
 * 部分代码修改（修改settings.py文件）
   - DEBUG = False 
-  - ALLOWED_HOSTS = ['*', ]
+  - ALLOWED_HOSTS = ['*',  ]
+  - 添加STATIC_ROOT = os.path.join(BASE_DIR, "static/"), 退出并运行 python manage.py collectstatic 生成静态文件
   
