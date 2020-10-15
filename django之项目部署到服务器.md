@@ -52,6 +52,17 @@
   >vacuum = true    
   >daemonize = /myapp/project/logs/uwsgi.log            
   >logfile-chmod = 666 
+  
+## nginx安装和配置
+* nginx安装
+  - 将nginx的安装包传到linux并解压     
+    tar zxvf nginx-1.6.2.tar.gz
+  - 进入安装包目录
+    cd nginx-1.6.2
+  - 编译安装  
+    ./configure    
+    make && make install   
+
 
 
   
