@@ -20,5 +20,7 @@
 * 建立一个虚拟环境
   - 建立myapp文件，并在文件下建env和project文件，分别放虚拟环境和程序代码
   - 在env下创建虚拟环境      
-    <font color=#DC143C>virtualenv -p python3 py3env</font>
+    <font color="#DC143C">virtualenv -p python3 py3env</font>
+  - 启动虚拟环境     
+    <font color="#DC143C">source py3env/bin/activate</font>
     
