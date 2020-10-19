@@ -40,7 +40,7 @@
 * 部分代码修改（修改settings.py文件）
   - DEBUG = False 
   - ALLOWED_HOSTS = ['*',  ]
-  - 添加STATIC_ROOT = os.path.join(BASE_DIR, "static/"), 退出并运行 python manage.py collectstatic 生成静态文件
+  - 添加STATIC_ROOT = os.path.join(BASE_DIR, '/static/'), 退出并运行 python manage.py collectstatic 生成静态文件
   
 ## uwsgi安装和配置
 * 安装uwsgi
