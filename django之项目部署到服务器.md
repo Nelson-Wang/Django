@@ -40,18 +40,19 @@
   - pip install uwsgi
 * uwsgi配置
   - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件
-  >[uwsgi]  
-  >chdir = /myapp/project/work/     
-  >module = work.wsgi     
-  >home = /myapp/env/py3env      
-  >master = true      
-  >processes = 4     
-  >theads = 2      
-  >socket = 100.100.228.240:8001     
-  >chmod-sock = 666     
-  >vacuum = true    
-  >daemonize = /myapp/project/logs/uwsgi.log            
-  >logfile-chmod = 666 
+  [uwsgi]  
+  chdir = /myapp/project/work/
+  module = work.wsgi  
+  home = /myapp/env/py3env
+  master = true
+  processes = 4  
+  theads = 2  
+  socket = 100.100.228.240:8001
+  chmod-sock = 666  
+  vacuum = true
+  daemonize = /myapp/project/logs/uwsgi.log 
+  logfile-chmod = 666 
+
   
 ## nginx安装和配置
 * nginx安装
@@ -78,7 +79,6 @@
       events {
           worker_connections  1024;
       }
-
 
       http {
           include       /usr/local/nginx/conf/mime.types;
@@ -126,13 +126,12 @@
               }
 
               # proxy the PHP scripts to Apache listening on 127.0.0.1:80
-              #
+         
               #location ~ \.php$ {
               #    proxy_pass   http://127.0.0.1;
               #}
-
               # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-              #
+       
               #location ~ \.php$ {
               #    root           html;
               #    fastcgi_pass   127.0.0.1:9000;
@@ -143,15 +142,14 @@
 
               # deny access to .htaccess files, if Apache's document root
               # concurs with nginx's one
-              #
+              
               #location ~ /\.ht {
               #    deny  all;
               #}
           }
 
-
           # another virtual host using mix of IP-, name-, and port-based configuration
-          #
+         
           #server {
           #    listen       8000;
           #    listen       somename:8080;
