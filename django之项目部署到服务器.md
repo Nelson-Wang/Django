@@ -39,7 +39,8 @@
 * 安装uwsgi
   - pip install uwsgi
 * uwsgi配置
-  - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件          
+  - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件      
+  
         [uwsgi]          
         chdir = /myapp/project/work/            
         module = work.wsgi             
@@ -65,6 +66,7 @@
     make && make install   
 * nginx配置
   -在/myapp/project/conf文件夹下建立nginx.conf文件
+  
       user  root;
       worker_processes  1;
 
