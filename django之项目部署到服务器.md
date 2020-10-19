@@ -1,13 +1,12 @@
-<html>
 ## 环境说明
-* 进行本文操作前需己搭建好的环境
-  - linux系统，我用的是openEuler
+* 进行本文操作前需己搭建好的环境      
+  - linux系统，我用的是openEuler          
   - Python 3.7.9
   - pip 20.1.1
   - virtualenv 20.0.31
   - nginx 1.16.0
   - SQLite 3.33.0
-* 后面进行安装的环境 
+* 后面进行安装的环境              
   - asgiref 3.2.10
   - Django 3.1.1
   - Pillow 7.2.0
@@ -189,15 +188,7 @@
       }
 ## 项目启动
 
-<font face="黑体">我是黑体字</font>
-<font face="微软雅黑">我是微软雅黑</font>
-<font face="STCAIYUN">我是华文彩云</font>
-<font color=red>我是红色</font>
-<font color=#008000>我是绿色</font>
-<font color=Blue>我是蓝色</font>
-<font size=5>我是尺寸</font>
-<font face="黑体" color=green size=5>我是黑体，绿色，尺寸为5</font>
-</html>
+
 
 
 
