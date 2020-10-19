@@ -39,7 +39,7 @@
 * 安装uwsgi
   - pip install uwsgi
 * uwsgi配置
-  - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件
+  - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件            
     [uwsgi]  
     chdir = /myapp/project/work/
     module = work.wsgi  
