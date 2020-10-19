@@ -21,17 +21,19 @@
     ```diff
     - virtualenv -p python3 py3env
     ```
-    <font color="#DC143C"></font>
   - 启动虚拟环境     
-    <font color="red">source py3env/bin/activate</font>
+    ```diff
+    - source py3env/bin/activate
+    ```
 * 迁移windows下的pip环境
   - 获取pycharm中的pip环境，并存到env.txt中        
-  ```diff
-  - pip freeeze -> env.txt
-  ```
+    ```diff
+    - pip freeeze -> env.txt
+    ```
   - 将env.txt传到linux中，并安装里面的环境     
-    pip install -r env.txt
-    
+    ```diff
+    - pip install -r env.txt
+    ```
 ## 项目代码上传
 * 项目代码测试
   - 将代码上传到/myapp/project/文件下，运行python manage.py runserver查看代码是否有错误
@@ -42,7 +44,9 @@
   
 ## uwsgi安装和配置
 * 安装uwsgi
-  - pip install uwsgi
+    ```diff
+    - pip install uwsgi
+    ```
 * uwsgi配置
   - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件      
   
