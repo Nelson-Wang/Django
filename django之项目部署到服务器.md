@@ -18,7 +18,10 @@
 * 建立一个虚拟环境
   - 建立myapp文件，并在文件下建env和project文件，分别放虚拟环境和程序代码
   - 在env下创建虚拟环境      
-    <font color="#DC143C">virtualenv -p python3 py3env</font>
+    ```diff
+    - virtualenv -p python3 py3env
+    ```
+    <font color="#DC143C"></font>
   - 启动虚拟环境     
     <font color="red">source py3env/bin/activate</font>
 * 迁移windows下的pip环境
@@ -26,7 +29,6 @@
   ```diff
   - pip freeeze -> env.txt
   ```
-    
   - 将env.txt传到linux中，并安装里面的环境     
     pip install -r env.txt
     
