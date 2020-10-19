@@ -66,13 +66,19 @@
   
 ## nginx安装和配置
 * nginx安装
-  - 将nginx的安装包传到linux并解压     
-    tar zxvf nginx-1.6.2.tar.gz
+  - 将nginx的安装包传到linux并解压    
+    ```diff
+    - tar zxvf nginx-1.6.2.tar.gz
+    ```
   - 进入安装包目录
-    cd nginx-1.6.2
+    ```diff
+    - cd nginx-1.6.2
+    ```
   - 编译安装  
-    ./configure    
-    make && make install   
+    ```diff
+    - ./configure    
+    - make && make install  
+    ```
 * nginx配置
   -复制/usr/local/nginx/conf/nginx.conf到/myapp/project/conf文件夹下，以下为修改部分
   
