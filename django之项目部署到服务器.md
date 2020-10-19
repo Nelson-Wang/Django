@@ -80,7 +80,7 @@
     - make && make install  
     ```
 * nginx配置
-  -复制/usr/local/nginx/conf/nginx.conf到/myapp/project/conf文件夹下，以下为修改部分
+  - 复制/usr/local/nginx/conf/nginx.conf到/myapp/project/conf文件夹下，以下为修改部分
   
       user  root;
       worker_processes  1;
