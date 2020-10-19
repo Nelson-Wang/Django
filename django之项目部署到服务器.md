@@ -111,6 +111,32 @@
               }
       }
 ## 项目启动
+  * 启动uwsgi和nginx
+    - 进入/myapp/project/conf中运行uwsgi.ini
+      ```diff
+      - uwsgi --ini uwsgi.ini
+      ```
+    - 进入/myapp/project/conf中运行nginx.conf
+      ```diff
+      - nginx -c /myapp/project/conf/nginx.conf
+      ```
+  * 调试问题常用命令
+    - 查看某个端口是否被占用
+      ```diff
+      - netstat  -anp  |grep   端口号
+      ```
+    - 杀死uwsgi和nginx进程
+      ```diff
+      - killall -9 uwsgi
+      - killall -9 nginx
+      ```
+    - 重启nginx
+      ```diff
+      - nginx -c /myapp/project/conf/nginx.conf -s reload
+      ```
+    
+    
+    
 
 
 
