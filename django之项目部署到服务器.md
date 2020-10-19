@@ -39,19 +39,20 @@
 * 安装uwsgi
   - pip install uwsgi
 * uwsgi配置
-  - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件            
-      [uwsgi]          
-      chdir = /myapp/project/work/            
-      module = work.wsgi             
-      home = /myapp/env/py3env             
-      master = true         
-      processes = 4        
-      theads = 2           
-      socket = 100.100.228.240:8001          
-      chmod-sock = 666           
-      vacuum = true           
-      daemonize = /myapp/project/logs/uwsgi.log              
-      logfile-chmod = 666         
+  - 在/myapp/project/下建立conf和logs文件夹，在conf文件夹下建立uwsgi.ini文件          
+  
+        [uwsgi]          
+        chdir = /myapp/project/work/            
+        module = work.wsgi             
+        home = /myapp/env/py3env             
+        master = true         
+        processes = 4        
+        theads = 2           
+        socket = 100.100.228.240:8001          
+        chmod-sock = 666           
+        vacuum = true           
+        daemonize = /myapp/project/logs/uwsgi.log              
+        logfile-chmod = 666         
 
   
 ## nginx安装和配置
