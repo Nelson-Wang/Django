@@ -125,6 +125,11 @@
       ```diff
       - netstat  -anp  |grep   端口号
       ```
+    - 查看uwsgi和nginx进程
+      ```diff
+      - ps -ef |grep uwsgi
+      - ps -ef |grep nginx
+      ```
     - 杀死uwsgi和nginx进程
       ```diff
       - killall -9 uwsgi
