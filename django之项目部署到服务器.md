@@ -80,36 +80,36 @@
     - make && make install  
     ```
 * nginx配置
-  - 复制/usr/local/nginx/conf/nginx.conf到/myapp/project/conf文件夹下，以下为修改部分
-  
-      user  root;
-      worker_processes  1;
+  - 复制/usr/local/nginx/conf/nginx.conf到/myapp/project/conf文件夹下，以下为修改部分                
+   
+        user  root;
+        worker_processes  1;
 
-      error_log  /myapp/project/logs/error.log;
-      error_log  /myapp/project/logs/error.log  notice;
-      error_log  /myapp/project/logs/error.log  info;
+        error_log  /myapp/project/logs/error.log;
+        error_log  /myapp/project/logs/error.log  notice;
+        error_log  /myapp/project/logs/error.log  info;
 
-      http {
-          include       /usr/local/nginx/conf/mime.types;
-          default_type  application/octet-stream;
+        http {
+            include       /usr/local/nginx/conf/mime.types;
+            default_type  application/octet-stream;
 
-          server {
-              listen       9000;
-              server_name  100.100.228.240;
+            server {
+                listen       9000;
+                server_name  100.100.228.240;
 
-              #charset utf-8;
+                #charset utf-8;
 
-              #access_log  logs/host.access.log  main;
+                #access_log  logs/host.access.log  main;
 
-              location /static {
-                  alias /myapp/project/work/static/; 
-              }
+                location /static {
+                    alias /myapp/project/work/static/; 
+                }
 
-              location / {
-                  uwsgi_pass  100.100.228.240:8001;
-                  include /usr/local/nginx/conf/uwsgi_params;
-              }
-      }
+                location / {
+                    uwsgi_pass  100.100.228.240:8001;
+                    include /usr/local/nginx/conf/uwsgi_params;
+                }
+        }
 ## 项目启动
   * 启动uwsgi和nginx
     - 进入/myapp/project/conf中运行uwsgi.ini
