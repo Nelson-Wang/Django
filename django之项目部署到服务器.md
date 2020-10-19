@@ -22,8 +22,11 @@
   - 启动虚拟环境     
     <font color="red">source py3env/bin/activate</font>
 * 迁移windows下的pip环境
-  - 获取pycharm中的pip环境，并存到env.txt中         
-    pip freeeze -> env.txt
+  - 获取pycharm中的pip环境，并存到env.txt中        
+  ```diff
+  - pip freeeze -> env.txt
+  ```
+    
   - 将env.txt传到linux中，并安装里面的环境     
     pip install -r env.txt
     
