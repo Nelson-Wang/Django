@@ -1,3 +1,4 @@
+<html>
 ## 环境说明
 * 进行本文操作前需己搭建好的环境
   - linux系统，我用的是openEuler
@@ -187,7 +188,7 @@
 
       }
 ## 项目启动
-<html>
+
 <font face="黑体">我是黑体字</font>
 <font face="微软雅黑">我是微软雅黑</font>
 <font face="STCAIYUN">我是华文彩云</font>
